@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>关于我是谁的问题</title>
+    <style>
+        #body {
+            background:url("./images/doge.jpg")
+        }
+        #first {
+            animation: zhang 12s infinite;
+            font-size: 200px;
+            position: absolute;
+            left: 100px;
+        }
+        #second {
+            animation: fat 12s infinite;
+            font-size: 200px;
+            position: absolute;
+            left: 100px;
+        }
+        @keyframes zhang {
+            0%{opacity: 0}
+            25%{opacity: 100}
+            50%{opacity: 0}
+            100%{opacity: 0}
+        }
+        @keyframes fat {
+            0%{opacity: 0}
+            50%{opacity: 0}
+            75%{opacity: 100}
+            100%{opacity: 0}
+    </style>
 </head>
-<body background="./images/doge.jpg">
-    <h1>
-        无题
-    </h1>
-
-    <audio src="bgm/feng.wav" controls="controls" autoplay="autoplay">
-        Your browser does not support the audio element.
+<body id="body">
+    <audio src="bgm/feng.wav" controls="controls" autoplay="autoplay" loop="loop">
+        Your browser does not support the audio element
     </audio>
-    <p>我是不是小喜子</p>
-    <p>我是小喜子</p>
-    <p>我是小喜子</p>
-    <p>我是小喜子</p>
-</body>
+    <p id="first">张玉</p>
+    <p id="second">是个大胖子</p>
+ </body>
 </html>
