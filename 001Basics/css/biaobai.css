@@ -1,5 +1,6 @@
 html{
     background:hotpink url("../images/love tree.jpg" );
+    background-size: 100% 100%;
 }
 html,body{
     margin:0;
