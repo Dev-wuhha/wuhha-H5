@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p id="res">hhh</p>
+</body>
+<script type="text/javascript">
+    var random = Math.ceil(Math.random() * 6);
+    console.info(random);
+    var caiCei=false;
+    function guess() {
+        var judge = prompt("请猜骰子");
+        if (judge == random) {
+            document.getElementById("res").innerHTML="恭喜您，猜对了！"+"<img src=\"images/dice/"+judge+".png\"/>";
+            caiCei=true;
+        } else {
+            document.getElementById("res").innerHTML="对不起您嘞，您猜错了！";
+        }
+    }
+    guess();
+    if(caiCei==false){
+        if("是"==prompt("您是否愿意再猜一次呢？请回答：是/否")){
+            guess();
+        }
+        else{
+            document.getElementById("res").innerHTML="期待您进行下一次游戏哦！";
+        }
+    }
+
+</script>
+</html>
