@@ -16,14 +16,20 @@
     var random = Math.ceil(Math.random() * 6);
     console.info(random);
     var caiCei=false;
+    var str;
     function guess() {
         var judge = prompt("请猜骰子");
+        if(!Number.isInteger(judge/1)||judge>6||judge<1){
+            str="您输入有误，请重新输入！";
+            return;
+        }
         if (judge == random) {
-            document.getElementById("res").innerHTML="恭喜您，猜对了！"+"<img src=\"images/dice/"+judge+".png\"/>";
+            str="恭喜您，猜对了！"+"<img src=\"images/dice/"+judge+".png\"/>";
             caiCei=true;
         } else {
-            document.getElementById("res").innerHTML="对不起您嘞，您猜错了！";
+            str="对不起您嘞，您猜错了！";
         }
+        document.getElementById("res").innerHTML=str;
     }
     guess();
     if(caiCei==false){
@@ -31,7 +37,7 @@
             guess();
         }
         else{
-            document.getElementById("res").innerHTML="期待您进行下一次游戏哦！";
+            str="期待您进行下一次游戏哦！";
         }
     }
 
