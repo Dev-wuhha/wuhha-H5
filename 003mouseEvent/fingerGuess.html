@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="fingerGuess.css" type="text/css">
+</head>
+<body>
+<h1>请出招吧！</h1>
+<div id="container">
+    <div id="mine">
+        <input type="button" value="石头" onclick="rock()"/>
+        <input type="button" value="剪刀" onclick="scissors()"/>
+        <input type="button" value="布" onclick="paper()"/>
+        <div id="myChoice">
+            <img src="images/unknow.gif"/>
+        </div>
+    </div>
+    <div id="computer">
+        <p>
+            电脑的选择:
+        </p>
+        <div id="computerChoice">
+            <img src="images/unknow.gif"/>
+        </div>
+    </div>
+</div>
+<h1 id="result">GoGoGo!
+</h1>
+</body>
+<script src="fingerGuess.js" type="text/javascript"></script>
+</html>

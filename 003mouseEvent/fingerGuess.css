@@ -1,0 +1,32 @@
+h1{
+    font-size: 100px;
+    margin:10px auto;
+}
+h1,p {
+    text-align: center;
+}
+#container{
+    margin:0 auto;
+    height:500px;
+    width:600px;
+    align: center;
+    border:10px solid #f16f6f;
+}
+input{
+    float:left;
+    width:100px;
+    text-align: center;
+}
+div>div{
+    width:300px;
+    float:left;
+}
+#result{
+    font-size: 50px;
+}
+#myChoice img{
+    padding-top: 30px;
+}
+#computerChoice{
+    transform: scaleX(-1);
+}
